@@ -1,0 +1,21 @@
+package practice;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Array_Basic_Ex 
+{
+	public static void main(String[]args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the size of array :- ");
+		int size=sc.nextInt();
+		
+		int [] a=new int [size];
+		System.out.println("Enter array elements one by one :- ");
+		for(int i=1;i<=a.length-1;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		System.out.println("Given array is :- "+Arrays.toString(a));
+		sc.close();
+	}
+}
